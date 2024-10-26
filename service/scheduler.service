@@ -1,0 +1,13 @@
+# /etc/systemd/system/reporting.service
+[Unit]
+Description=Schedular Service
+After=network.target
+
+[Service]
+ExecStart=/home/user/scheduler/app/scheduler.sh
+Restart=always
+User=root
+WorkingDirectory=/home/user/scheduler/app/
+
+[Install]
+WantedBy=multi-user.target
