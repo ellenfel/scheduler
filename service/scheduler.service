@@ -4,10 +4,10 @@ Description=Schedular Service
 After=network.target
 
 [Service]
-ExecStart=/home/user/scheduler/app/scheduler.sh
+ExecStart=/home/ellenfel/Desktop/repos/scheduler/service/scheduler.sh
 Restart=always
 User=root
-WorkingDirectory=/home/user/scheduler/app/
+WorkingDirectory=/home/ellenfel/Desktop/repos/scheduler/app/
 
 [Install]
 WantedBy=multi-user.target
